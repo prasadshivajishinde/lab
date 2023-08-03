@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>String Case Converter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script>
+        function convertString() {
+            var inputString = document.getElementById('inputString').value;
+            var lowercaseString = _.toLower(inputString); 
+            var uppercaseString = _.toUpper(inputString);
+
+            document.getElementById('lowercaseResult').textContent = lowercaseString;
+            document.getElementById('uppercaseResult').textContent = uppercaseString;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>String Case Converter</h1>
+
+    <label for="inputString">Enter a string:</label>
+    <input type="text" id="inputString">
+
+    <button onclick="convertString()">Convert</button>
+
+    <h2>Lowercase:</h2>
+    <div id="lowercaseResult"></div>
+
+    <h2>Uppercase:</h2>
+    <div id="uppercaseResult"></div>
+</body>
+
+</html>

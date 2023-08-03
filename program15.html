@@ -1,0 +1,22 @@
+=> Html
+<div class="container">
+<h1>Angular Button Click Event</h1>
+<button (click)="handleClick()">Click me</button>
+<p>{{ message }}</p>
+</div>
+
+
+
+<!-- Ts code: -->
+import { Component } from '@angular/core';
+@Component({
+selector: 'app-root',
+templateUrl: './app.component.html',
+styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+message: string = '';
+handleClick() {
+this.message = 'Button clicked!';
+}
+}

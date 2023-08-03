@@ -1,0 +1,13 @@
+.para{
+    border: 2px solid black;
+    background-color: rgb(191, 255, 0);
+    
+}
+.para p{
+    color:black;
+    font-size: 20px;
+    opacity: 0.6;
+}
+.head{
+    text-align: center;
+}

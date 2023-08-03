@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>Angular App</title>
+
+</head>
+<body>
+    <h2>Current Date and time in Angular JS</h2>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script type="text/javascript">
+    var app=angular.module('myApp',[]);
+    app.controller('myCtrl',function($scope)
+    {
+        $scope.CurrentDate = new Date();    
+    });
+</script>
+<div ng-app="myApp" ng-controller="myCtrl">
+     Date : {{CurrentDate | date:'dd/MM/yyyy'}}  </br>
+     Date_1 : {{CurrentDate | date:'dd, MMMM yyyy'}}  </br>
+     Time : {{CurrentDate | date: 'hh:mm:ss a'}} </br> 
+</div>
+
+</body>
+</html>
